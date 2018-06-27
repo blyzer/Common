@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giras", "Giras\Giras.csproj", "{B73E989B-057A-4DE1-8FE9-34BE93281805}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9F4665BD-D6CF-4FB2-9E47-CAB9917799B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B73E989B-057A-4DE1-8FE9-34BE93281805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73E989B-057A-4DE1-8FE9-34BE93281805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73E989B-057A-4DE1-8FE9-34BE93281805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73E989B-057A-4DE1-8FE9-34BE93281805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F4665BD-D6CF-4FB2-9E47-CAB9917799B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4665BD-D6CF-4FB2-9E47-CAB9917799B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4665BD-D6CF-4FB2-9E47-CAB9917799B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4665BD-D6CF-4FB2-9E47-CAB9917799B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55DBA73E-733F-4315-A5E6-6B7F6875336F}
+	EndGlobalSection
+EndGlobal

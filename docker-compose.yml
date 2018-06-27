@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  giras:
+    image: ${DOCKER_REGISTRY}giras
+    build:
+      context: .
+      dockerfile: Giras\Dockerfile
