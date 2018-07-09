@@ -1,0 +1,101 @@
+<div class="card" *ngIf="!loading">
+  <div class="card-header">
+    <strong>{{ title | translate }}</strong>
+  </div>
+  <div class="card-body" >
+    <form [formGroup]="userForm" novalidate class="form-horizontal">
+      <div class="form-group row">
+        <label class="col-md-2 col-lg-2 form-control-label" for="username">{{ 'UserName' | translate}}</label>
+        <div class="col-md-6">
+          <input type="text" name="username" class="form-control" formControlName="userNameDisabled" *ngIf="!isNew">
+          <input type="text" name="username" class="form-control" formControlName="userName" required="required" *ngIf="isNew">
+          <div class="invalid-feedback">
+            <span class="help-block" *ngIf="!!usernameControl.errors?.required">{{'Required' | translate}}</span>
+            <span class="help-block" *ngIf="!usernameControl.errors?.required && !!usernameControl.errors?.duplicated ">{{'UserAlreadyExist' | translate}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 col-lg-2 form-control-label" for="password">{{ 'Password' | translate}}</label>
+        <div class="col-md-6">
+          <input type="password" id="password" name="password" class="form-control" formControlName="password">
+          <div class="invalid-feedback">
+            <span class="help-block">{{ 'Required' | translate }} </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 col-lg-2 form-control-label" for="email">{{ 'Email' | translate }}</label>
+        <div class="col-md-6">
+          <input type="email" id="email" name="email" class="form-control" formControlName="email">
+          <div class="invalid-feedback">
+            <span class="help-block" *ngIf="!!email.errors?.required">{{'Required' | translate}}</span>
+            <span class="help-block" *ngIf="!email.errors?.required  && !!email.errors?.email">{{'InvalidEmail' | translate}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 col-lg-2 form-control-label" for="firstName">{{ 'FirstName' | translate}}</label>
+        <div class="col-md-6">
+          <input type="text" id="firstName" class="form-control" formControlName="firstName">
+          <div class="invalid-feedback">
+            <span class="help-block">{{ 'Required' | translate }} </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 col-lg-2 form-control-label" for="lastName">{{ 'LastName' | translate}}</label>
+        <div class="col-md-6">
+          <input type="text" id="lastName" class="form-control" formControlName="lastName">
+          <div class="invalid-feedback">
+            <span class="help-block">{{ 'Required' | translate }} </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 col-lg-2 form-control-label" for="roleName">{{ 'Role' | translate }}</label>
+        <div class="col-md-6">
+          <select class="form-control" formControlName="roleName" (change)="onRolChange()">
+            <option disabled selected value="null">{{'Select' | translate}}</option>
+            <option *ngFor="let role of roles" value="{{role.name}}">{{role.name | translate}}</option>
+          </select>
+          <div class="invalid-feedback">
+            <span class="help-block">{{ 'Required' | translate }} </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row" *ngIf="showSchoolCode">
+        <label class="col-md-2 col-lg-2 form-control-label" for="school">{{ 'School' | translate }}</label>
+        <div class="col-md-6">
+          <select class="form-control" formControlName="schoolCode">
+            <option disabled selected value="" class="text-muted">{{'Select' | translate}}</option>
+            <option value="*" class="text-muted">* {{'All(F)' | translate}}</option>
+            <option *ngFor="let school of schools" value="{{school.code}}">{{school.name | translate}}</option>
+          </select>
+          <div class="invalid-feedback">
+            <span class="help-block">{{ 'Required' | translate }} </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 col-lg-2 form-control-label" for="active">{{ 'Active' | translate }}</label>
+        <div class="col-md-6">
+          <label class="switch switch-default switch-pill switch-primary">
+            <input #active checked="" class="switch-input" type="checkbox" formControlName="active" *ngIf="!isNew">
+            <span class="switch-label"></span>
+            <span class="switch-handle"></span>
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card-footer">
+    <div class="pull-right">
+      <button type="button" [disabled]="!userForm.valid"  class="btn btn-sm btn-primary" (click)="onSubmit()">
+        <i class="fa fa-dot-circle-o"></i> {{'Submit' | translate}}</button>
+      <a [routerLink]="['../../users']" class="btn btn-sm btn-danger">
+        <i class="fa fa-ban"></i> {{'Cancel' | translate}}</a>
+    </div>
+  </div>
+</div>
+

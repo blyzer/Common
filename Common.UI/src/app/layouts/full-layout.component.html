@@ -1,0 +1,74 @@
+<header class="app-header navbar">
+    <button class="navbar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>
+    <a class="navbar-brand" href="javascript:void(0)"></a>
+    <ul class="nav navbar-nav mr-auto d-md-down-none">
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler" href="javascript:void(0)" appSidebarToggler>&#9776;</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li *ngIf="!loading" class="nav-item dropdown" dropdown (onToggle)="toggled($event)">
+            <a href class="nav-link dropdown-toggle" dropdownToggle (click)="false">
+                <img src="assets/img/avatars/avatar.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="d-md-down-none">{{currentUser.userName}}</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
+                <div class="dropdown-header text-center">
+                    <strong>{{ 'Account' | translate }}</strong>
+                </div>
+                <a routerLink='/account/change-password'class="dropdown-item" href="javascript:void(0)">
+                    <i class="fa fa-user"></i> {{ 'ChangePassword' | translate}}</a>
+                <a class="dropdown-item" href="javascript:void(0)" (click)="logout()">
+                    <i class="fa fa-lock"></i> {{ 'Logout' | translate}}</a>
+            </div>
+        </li>
+        <li class="nav-item ">
+        </li>
+    </ul>
+</header>
+
+<div class="app-body">
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']">
+                        <i class="icon-speedometer"></i> {{'Dashboard' | translate}} </a>
+                </li>
+                <div class="divider"></div>
+                <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown *ngFor="let menuItem of menuItems">
+                    <a *ngIf="menuItem.type === 'main'" class="nav-link nav-dropdown-toggle" href="javascript:void(0)" appNavDropdownToggle>
+                        <i class="fa {{menuItem.icon}}"></i> {{ menuItem.title | translate }}</a>
+
+                    <ul class="nav-dropdown-items" *ngIf="menuItem.type === 'main'">
+                        <li class="nav-item" *ngFor="let subMenu of menuItem.subMenus">
+                            <a class="nav-link" routerLinkActive="active" routerLink='{{subMenu.route}}'>
+                                <i class="fa fa-dot-circle-o"></i> {{ subMenu.title | translate}}</a>
+                        </li>
+                    </ul>
+
+                    <a *ngIf="menuItem.type === 'sub'" class="nav-link" routerLinkActive="active" routerLink='{{menuItem.route}}'>
+                        <i class="fa fa-dot-circle-o"></i> {{ menuItem.title | translate}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <app-breadcrumbs></app-breadcrumbs>
+        </ol>
+        <div class="container-fluid" [@routerTransition]="getState(o)">
+            <router-outlet #o="outlet" ></router-outlet>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+</div>
+
+<footer class="app-footer">
+    <span class="float-right">Powered by
+        <a href="https://www.linkedin.com/in/blyzer">Blyzer</a>
+    </span>
+</footer>

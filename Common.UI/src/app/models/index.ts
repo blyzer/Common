@@ -1,0 +1,14 @@
+import { User } from 'app/models';
+export * from './models/user';
+export * from './models/role';
+export * from './models/district';
+export * from './models/province';
+export * from './models/municipality';
+export * from './models/person';
+export * from './models/marital-status';
+export * from './models/identification-type';
+export * from './models/contact-information';
+export * from './models/address';
+export * from './models/gender';
+export * from './models/contact-type';
+export * from './models/access-list';

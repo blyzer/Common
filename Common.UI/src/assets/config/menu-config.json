@@ -1,0 +1,22 @@
+[
+  {
+    "key": "settings",
+    "title": "Settings",
+    "icon": "fa-gears",
+    "type": "main",
+    "subMenus": [
+      {
+        "key": "roles",
+        "title": "Roles",
+        "type": "sub",
+        "route": "/settings/roles"
+      },
+      {
+        "key": "users",
+        "title": "Users",
+        "type": "sub",
+        "route": "/settings/users"
+      }
+    ]
+  }
+]

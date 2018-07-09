@@ -1,0 +1,19 @@
+// Here you can add other styles
+
+.app-body .sidebar {
+    flex: 0 0 210px;
+}
+
+.sidebar .sidebar-nav,
+.sidebar .nav {
+    width: 210px;
+}
+
+
+.ng-invalid.ng-touched + .invalid-feedback{
+  display: block !important;
+}
+
+label > .ng-invalid.ng-touched{
+  display: block !important;
+}

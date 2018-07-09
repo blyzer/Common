@@ -1,0 +1,49 @@
+<div class="app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card-group mb-0">
+          <div class="card p-4">
+            <div class="card-body" *ngIf="formLogin">
+              <form [formGroup]="formLogin" novalidate (ngSubmit)="login()">
+                <h1>Login</h1>
+                <p class="text-muted"></p>
+                <div class="input-group mb-3">
+                  <span class="input-group-addon">
+                    <i class="icon-user"></i>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Username" formControlName="username">
+                  <div class="mt-2 text-danger" *ngIf="hasErrors(formLogin, 'username')">
+                      <span class="help-block"><strong>*</strong></span>
+                  </div>
+                </div>
+                <div class="input-group mb-4">
+                  <span class="input-group-addon">
+                    <i class="icon-lock"></i>
+                  </span>
+                  <input type="password" class="form-control" placeholder="Password" formControlName="password">
+                  <div class="mt-2 text-danger" *ngIf="hasErrors(formLogin, 'password')">
+                      <span class="help-block"><strong>*</strong></span>
+                  </div>
+                </div>
+                <div *ngIf="message">
+                  <alert>
+                    <span [innerHtml]="message | translate"></span>
+                  </alert>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <button [disabled]="!formLogin.valid || loginButtonTitle !== 'Login'" type="submit" class="btn btn-primary px-4">
+                      <i *ngIf="loginButtonTitle !== 'Login'" class="fa fa-spin fa-spinner"></i>
+                      {{loginButtonTitle | translate }}
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

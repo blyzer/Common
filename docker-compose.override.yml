@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  giras:
+  Common:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
