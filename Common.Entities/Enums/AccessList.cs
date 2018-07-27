@@ -1,4 +1,4 @@
-﻿namespace Common.Entities.Enums
+﻿namespace Common360.Entities.Enums
 {
     public enum AccessList
     {

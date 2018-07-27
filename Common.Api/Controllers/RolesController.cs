@@ -3,11 +3,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Common.Api.Models;
-using Common.Core.Rules;
-using Common.Entities.Models;
+using Common360.Api.Models;
+using Common360.Core.Rules;
+using Common360.Entities.Models;
 
-namespace Common.Api.Controllers
+namespace Common360.Api.Controllers
 {
     [Route("api/roles")]
     public class RolesController : Controller

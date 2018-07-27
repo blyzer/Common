@@ -1,5 +1,3 @@
-import { SchoolEditComponent } from './schools/school-edit/school-edit.component';
-import { SchoolListComponent } from './schools/school-list/school-list.component';
 import { UserListComponent } from './users/user-list/user-list.component';
 import { UserEditComponent } from './users/user-edit/user-edit.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -15,16 +13,6 @@ const routes: Routes = [
         children: [
             { path: ':userName', component: UserEditComponent },
             { path: '', component: UserListComponent }
-        ]
-    },
-    {
-        path: 'schools',
-        data: {
-            title: 'Schools'
-        },
-        children: [
-            { path: ':code', component: SchoolEditComponent },
-            { path: '', component: SchoolListComponent }
         ]
     },
     {

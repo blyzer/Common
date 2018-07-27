@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Common.Entities.Models;
+using Common360.Entities.Models;
 
-namespace Common.Data.Configurations
+namespace Common360.Data.Configurations
 {
     public class AddressEntityConfiguration : IEntityTypeConfiguration<Address>
     {

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using Common.Api.Models;
-using Common.Entities.Models;
+using Common360.Api.Models;
+using Common360.Entities.Models;
 using Microsoft.AspNetCore.Builder;
 
-namespace Common.Api.Configurations
+namespace Common360.Api.Configurations
 {
     public static class AutoMapperExtensions
     {

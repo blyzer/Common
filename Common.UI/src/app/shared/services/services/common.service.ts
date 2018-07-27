@@ -6,10 +6,7 @@ import {
   MaritalStatus,
   ContactType,
   AccessList,
-  AcademicProgramStatus,
-  CycleType,
-  PaymentType,
-  InstanceStatus,
+  UserType
 } from 'app/models';
 import { MenuItem } from '../../../core/models/menu-item';
 import * as _ from 'underscore';
@@ -39,20 +36,8 @@ export class CommonService {
     return Promise.resolve(Utils.getEnumStrings(AccessList));
   }
 
-  getAcademicProgramStatus(): Promise<string[]> {
-    return Promise.resolve(Utils.getEnumStrings(AcademicProgramStatus));
-  }
-
-  getCycleTypes(): Promise<string[]> {
-    return Promise.resolve(Utils.getEnumStrings(CycleType));
-  }
-
-  getPeymentTypes(): Promise<string[]> {
-    return Promise.resolve(Utils.getEnumStrings(PaymentType));
-  }
-
-  getProgramInstanceStatus(): Promise<string[]> {
-    return Promise.resolve(Utils.getEnumStrings(InstanceStatus));
+  getUserTypesList(): Promise<string[]> {
+    return Promise.resolve(Utils.getEnumStrings(UserType));
   }
 
   getMenu(): Promise<MenuItem[]> {

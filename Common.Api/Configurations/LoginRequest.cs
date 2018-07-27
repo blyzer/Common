@@ -1,4 +1,4 @@
-﻿namespace Common.Api.Configurations
+﻿namespace Common360.Api.Configurations
 {
     public class LoginRequest
     {

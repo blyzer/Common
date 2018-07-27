@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b0df336a-6231-473d-abd2-909f789493be}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>
+    </StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <Name>Common360.UI</Name>
+    <NodeExePath>C:\Program Files\nodejs\node.exe</NodeExePath>
+    <StartWebBrowser>True</StartWebBrowser>
+    <ScriptArguments>ng serve</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".angular-cli.json" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="proxy.conf.json" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
+    <Content Include="README.md" />
+    <Compile Include="i18nSort.js" />
+    <Compile Include="karma.conf.js" />
+    <Compile Include="protractor.conf.js" />
+    <Content Include="e2e\tsconfig.e2e.json" />
+    <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="e2e\app.po.ts" />
+    <Content Include="src\index.html" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\package-lock.json" />
+    <Content Include="src\tsconfig.app.json" />
+    <Content Include="src\tsconfig.spec.json" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+    <TypeScriptCompile Include="src\typings.d.ts" />
+    <Content Include="src\app\app.component.html" />
+    <TypeScriptCompile Include="src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\app.routing.ts" />
+    <TypeScriptCompile Include="src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ts" />
+    <Content Include="src\img\favicon.png" />
+    <Content Include="src\img\logo.png" />
+    <TypeScriptCompile Include="src\app\account\account.module.ts" />
+    <TypeScriptCompile Include="src\app\account\account.routing.ts" />
+    <TypeScriptCompile Include="src\app\core\utils.ts" />
+    <Content Include="src\app\dashboard\dashboard.component.html" />
+    <TypeScriptCompile Include="src\app\dashboard\dashboard-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\dashboard\dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\dashboard\dashboard.module.ts" />
+    <Content Include="src\app\layouts\full-layout.component.html" />
+    <Content Include="src\app\layouts\full-layout.component.css" />
+    <TypeScriptCompile Include="src\app\layouts\full-layout.component.ts" />
+    <TypeScriptCompile Include="src\app\models\index.ts" />
+    <TypeScriptCompile Include="src\app\settings\settings.module.ts" />
+    <TypeScriptCompile Include="src\app\settings\settings.routing.ts" />
+    <TypeScriptCompile Include="src\app\shared\aside.directive.ts" />
+    <TypeScriptCompile Include="src\app\shared\breadcrumb.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\nav-dropdown.directive.ts" />
+    <TypeScriptCompile Include="src\app\shared\sidebar.directive.ts" />
+    <Content Include="src\app\account\change-password\change-password.component.html" />
+    <TypeScriptCompile Include="src\app\account\change-password\change-password.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account\change-password\change-password.component.ts" />
+    <Content Include="src\app\account\login\login.component.html" />
+    <Content Include="src\app\account\login\login.component.css" />
+    <TypeScriptCompile Include="src\app\account\login\login.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account\login\login.component.ts" />
+    <TypeScriptCompile Include="src\app\core\animations\router.animations.ts" />
+    <TypeScriptCompile Include="src\app\core\auth\auth.guard.ts" />
+    <TypeScriptCompile Include="src\app\core\auth\auth.service.ts" />
+    <TypeScriptCompile Include="src\app\core\auth\index.ts" />
+    <TypeScriptCompile Include="src\app\core\auth\token.interceptor.ts" />
+    <TypeScriptCompile Include="src\app\core\components\base-component.ts" />
+    <TypeScriptCompile Include="src\app\core\data\collumn-definition.ts" />
+    <TypeScriptCompile Include="src\app\core\data\generic-database.ts" />
+    <TypeScriptCompile Include="src\app\core\data\generic-datasoruce.ts" />
+    <TypeScriptCompile Include="src\app\core\data\index.ts" />
+    <TypeScriptCompile Include="src\app\core\http\base-http.service.ts" />
+    <TypeScriptCompile Include="src\app\core\http\http-status-codes.ts" />
+    <TypeScriptCompile Include="src\app\core\http\index.ts" />
+    <TypeScriptCompile Include="src\app\core\http\model.service.ts" />
+    <TypeScriptCompile Include="src\app\core\models\auth-request.ts" />
+    <TypeScriptCompile Include="src\app\core\models\index.ts" />
+    <TypeScriptCompile Include="src\app\core\models\menu-item.ts" />
+    <TypeScriptCompile Include="src\app\core\models\user-profile.ts" />
+    <TypeScriptCompile Include="src\app\core\transfer-panel\index.ts" />
+    <TypeScriptCompile Include="src\app\core\transfer-panel\transfer-panel.module.ts" />
+    <Content Include="src\app\core\transfer-panel\transfe-panel\transfer-panel.component.html" />
+    <Content Include="src\app\core\transfer-panel\transfe-panel\transfer-panel.component.css" />
+    <TypeScriptCompile Include="src\app\core\transfer-panel\transfe-panel\transfer-panel.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\core\transfer-panel\transfe-panel\transfer-panel.component.ts" />
+    <TypeScriptCompile Include="src\app\models\models\access-levels.ts" />
+    <TypeScriptCompile Include="src\app\models\models\access-list.ts" />
+    <TypeScriptCompile Include="src\app\models\models\address.ts" />
+    <TypeScriptCompile Include="src\app\models\models\contact-information.ts" />
+    <TypeScriptCompile Include="src\app\models\models\contact-type.ts" />
+    <TypeScriptCompile Include="src\app\models\models\district.ts" />
+    <TypeScriptCompile Include="src\app\models\models\gender.ts" />
+    <TypeScriptCompile Include="src\app\models\models\identification-type.ts" />
+    <TypeScriptCompile Include="src\app\models\models\marital-status.ts" />
+    <TypeScriptCompile Include="src\app\models\models\municipality.ts" />
+    <TypeScriptCompile Include="src\app\models\models\person.ts" />
+    <TypeScriptCompile Include="src\app\models\models\province.ts" />
+    <TypeScriptCompile Include="src\app\models\models\role.ts" />
+    <TypeScriptCompile Include="src\app\models\models\user-type.ts" />
+    <TypeScriptCompile Include="src\app\models\models\user.ts" />
+    <Content Include="src\app\pages\not-found\not-found.component.html" />
+    <TypeScriptCompile Include="src\app\pages\not-found\not-found.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\pages\not-found\not-found.component.ts" />
+    <Content Include="src\app\settings\roles\role-edit\role-edit.component.html" />
+    <TypeScriptCompile Include="src\app\settings\roles\role-edit\role-edit.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\settings\roles\role-edit\role-edit.component.ts" />
+    <Content Include="src\app\settings\roles\role-list\role-list.component.html" />
+    <TypeScriptCompile Include="src\app\settings\roles\role-list\role-list.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\settings\roles\role-list\role-list.component.ts" />
+    <Content Include="src\app\settings\users\user-edit\user-edit.component.html" />
+    <Content Include="src\app\settings\users\user-edit\user-edit.component.css" />
+    <TypeScriptCompile Include="src\app\settings\users\user-edit\user-edit.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\settings\users\user-edit\user-edit.component.ts" />
+    <Content Include="src\app\settings\users\user-list\user-list.component.html" />
+    <Content Include="src\app\settings\users\user-list\user-list.component.css" />
+    <TypeScriptCompile Include="src\app\settings\users\user-list\user-list.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\settings\users\user-list\user-list.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\index.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\services\common.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\services\political-division.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\services\political-division.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\services\role.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\services\role.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\services\user.service.ts" />
+    <Content Include="src\assets\config\menu-config.json" />
+    <Content Include="src\assets\css\font-awesome.css" />
+    <Content Include="src\assets\css\font-awesome.min.css" />
+    <Content Include="src\assets\css\simple-line-icons.css" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="src\assets\fonts\Simple-Line-Icons.svg" />
+    <Content Include="src\assets\i18n\en.json" />
+    <Content Include="src\assets\i18n\es.json" />
+    <Content Include="src\assets\img\favicon.png" />
+    <Content Include="src\assets\img\logo.png" />
+    <Content Include="src\assets\img\avatars\1.jpg" />
+    <Content Include="src\assets\img\avatars\2.jpg" />
+    <Content Include="src\assets\img\avatars\3.jpg" />
+    <Content Include="src\assets\img\avatars\4.jpg" />
+    <Content Include="src\assets\img\avatars\5.jpg" />
+    <Content Include="src\assets\img\avatars\6.jpg" />
+    <Content Include="src\assets\img\avatars\7.jpg" />
+    <Content Include="src\assets\img\avatars\8.jpg" />
+    <Content Include="src\assets\img\avatars\avatar.jpg" />
+    <Content Include="src\assets\img\flags\Afghanistan.png" />
+    <Content Include="src\assets\img\flags\African Union.png" />
+    <Content Include="src\assets\img\flags\Albania.png" />
+    <Content Include="src\assets\img\flags\Algeria.png" />
+    <Content Include="src\assets\img\flags\American Samoa.png" />
+    <Content Include="src\assets\img\flags\Andorra.png" />
+    <Content Include="src\assets\img\flags\Angola.png" />
+    <Content Include="src\assets\img\flags\Anguilla.png" />
+    <Content Include="src\assets\img\flags\Antarctica.png" />
+    <Content Include="src\assets\img\flags\Antigua &amp; Barbuda.png" />
+    <Content Include="src\assets\img\flags\Arab League.png" />
+    <Content Include="src\assets\img\flags\Argentina.png" />
+    <Content Include="src\assets\img\flags\Armenia.png" />
+    <Content Include="src\assets\img\flags\Aruba.png" />
+    <Content Include="src\assets\img\flags\ASEAN.png" />
+    <Content Include="src\assets\img\flags\Australia.png" />
+    <Content Include="src\assets\img\flags\Austria.png" />
+    <Content Include="src\assets\img\flags\Azerbaijan.png" />
+    <Content Include="src\assets\img\flags\Bahamas.png" />
+    <Content Include="src\assets\img\flags\Bahrain.png" />
+    <Content Include="src\assets\img\flags\Bangladesh.png" />
+    <Content Include="src\assets\img\flags\Barbados.png" />
+    <Content Include="src\assets\img\flags\Belarus.png" />
+    <Content Include="src\assets\img\flags\Belgium.png" />
+    <Content Include="src\assets\img\flags\Belize.png" />
+    <Content Include="src\assets\img\flags\Benin.png" />
+    <Content Include="src\assets\img\flags\Bermuda.png" />
+    <Content Include="src\assets\img\flags\Bhutan.png" />
+    <Content Include="src\assets\img\flags\Bolivia.png" />
+    <Content Include="src\assets\img\flags\Bosnia &amp; Herzegovina.png" />
+    <Content Include="src\assets\img\flags\Botswana.png" />
+    <Content Include="src\assets\img\flags\Brazil.png" />
+    <Content Include="src\assets\img\flags\Brunei.png" />
+    <Content Include="src\assets\img\flags\Bulgaria.png" />
+    <Content Include="src\assets\img\flags\Burkina Faso.png" />
+    <Content Include="src\assets\img\flags\Burundi.png" />
+    <Content Include="src\assets\img\flags\Cambodja.png" />
+    <Content Include="src\assets\img\flags\Cameroon.png" />
+    <Content Include="src\assets\img\flags\Canada.png" />
+    <Content Include="src\assets\img\flags\Cape Verde.png" />
+    <Content Include="src\assets\img\flags\CARICOM.png" />
+    <Content Include="src\assets\img\flags\Cayman Islands.png" />
+    <Content Include="src\assets\img\flags\Central African Republic.png" />
+    <Content Include="src\assets\img\flags\Chad.png" />
+    <Content Include="src\assets\img\flags\Chile.png" />
+    <Content Include="src\assets\img\flags\China.png" />
+    <Content Include="src\assets\img\flags\CIS.png" />
+    <Content Include="src\assets\img\flags\Colombia.png" />
+    <Content Include="src\assets\img\flags\Commonwealth.png" />
+    <Content Include="src\assets\img\flags\Comoros.png" />
+    <Content Include="src\assets\img\flags\Congo-Brazzaville.png" />
+    <Content Include="src\assets\img\flags\Congo-Kinshasa(Zaire).png" />
+    <Content Include="src\assets\img\flags\Cook Islands.png" />
+    <Content Include="src\assets\img\flags\Costa Rica.png" />
+    <Content Include="src\assets\img\flags\Cote d'Ivoire.png" />
+    <Content Include="src\assets\img\flags\Croatia.png" />
+    <Content Include="src\assets\img\flags\Cuba.png" />
+    <Content Include="src\assets\img\flags\Cyprus.png" />
+    <Content Include="src\assets\img\flags\Czech Republic.png" />
+    <Content Include="src\assets\img\flags\Denmark.png" />
+    <Content Include="src\assets\img\flags\Djibouti.png" />
+    <Content Include="src\assets\img\flags\Dominica.png" />
+    <Content Include="src\assets\img\flags\Dominican Republic.png" />
+    <Content Include="src\assets\img\flags\Ecuador.png" />
+    <Content Include="src\assets\img\flags\Egypt.png" />
+    <Content Include="src\assets\img\flags\El Salvador.png" />
+    <Content Include="src\assets\img\flags\England.png" />
+    <Content Include="src\assets\img\flags\Equatorial Guinea.png" />
+    <Content Include="src\assets\img\flags\Eritrea.png" />
+    <Content Include="src\assets\img\flags\Estonia.png" />
+    <Content Include="src\assets\img\flags\Ethiopia.png" />
+    <Content Include="src\assets\img\flags\European Union.png" />
+    <Content Include="src\assets\img\flags\Faroes.png" />
+    <Content Include="src\assets\img\flags\Fiji.png" />
+    <Content Include="src\assets\img\flags\Finland.png" />
+    <Content Include="src\assets\img\flags\France.png" />
+    <Content Include="src\assets\img\flags\Gabon.png" />
+    <Content Include="src\assets\img\flags\Gambia.png" />
+    <Content Include="src\assets\img\flags\Georgia.png" />
+    <Content Include="src\assets\img\flags\Germany.png" />
+    <Content Include="src\assets\img\flags\Ghana.png" />
+    <Content Include="src\assets\img\flags\Gibraltar.png" />
+    <Content Include="src\assets\img\flags\Greece.png" />
+    <Content Include="src\assets\img\flags\Greenland.png" />
+    <Content Include="src\assets\img\flags\Grenada.png" />
+    <Content Include="src\assets\img\flags\Guadeloupe.png" />
+    <Content Include="src\assets\img\flags\Guam.png" />
+    <Content Include="src\assets\img\flags\Guatemala.png" />
+    <Content Include="src\assets\img\flags\Guernsey.png" />
+    <Content Include="src\assets\img\flags\Guinea-Bissau.png" />
+    <Content Include="src\assets\img\flags\Guinea.png" />
+    <Content Include="src\assets\img\flags\Guyana.png" />
+    <Content Include="src\assets\img\flags\Haiti.png" />
+    <Content Include="src\assets\img\flags\Honduras.png" />
+    <Content Include="src\assets\img\flags\Hong Kong.png" />
+    <Content Include="src\assets\img\flags\Hungary.png" />
+    <Content Include="src\assets\img\flags\Iceland.png" />
+    <Content Include="src\assets\img\flags\India.png" />
+    <Content Include="src\assets\img\flags\Indonezia.png" />
+    <Content Include="src\assets\img\flags\Iran.png" />
+    <Content Include="src\assets\img\flags\Iraq.png" />
+    <Content Include="src\assets\img\flags\Ireland.png" />
+    <Content Include="src\assets\img\flags\Islamic Conference.png" />
+    <Content Include="src\assets\img\flags\Isle of Man.png" />
+    <Content Include="src\assets\img\flags\Israel.png" />
+    <Content Include="src\assets\img\flags\Italy.png" />
+    <Content Include="src\assets\img\flags\Jamaica.png" />
+    <Content Include="src\assets\img\flags\Japan.png" />
+    <Content Include="src\assets\img\flags\Jersey.png" />
+    <Content Include="src\assets\img\flags\Jordan.png" />
+    <Content Include="src\assets\img\flags\Kazakhstan.png" />
+    <Content Include="src\assets\img\flags\Kenya.png" />
+    <Content Include="src\assets\img\flags\Kiribati.png" />
+    <Content Include="src\assets\img\flags\Kosovo.png" />
+    <Content Include="src\assets\img\flags\Kuwait.png" />
+    <Content Include="src\assets\img\flags\Kyrgyzstan.png" />
+    <Content Include="src\assets\img\flags\Laos.png" />
+    <Content Include="src\assets\img\flags\Latvia.png" />
+    <Content Include="src\assets\img\flags\Lebanon.png" />
+    <Content Include="src\assets\img\flags\Lesotho.png" />
+    <Content Include="src\assets\img\flags\Liberia.png" />
+    <Content Include="src\assets\img\flags\Libya.png" />
+    <Content Include="src\assets\img\flags\Liechtenshein.png" />
+    <Content Include="src\assets\img\flags\Lithuania.png" />
+    <Content Include="src\assets\img\flags\Luxembourg.png" />
+    <Content Include="src\assets\img\flags\Macao.png" />
+    <Content Include="src\assets\img\flags\Macedonia.png" />
+    <Content Include="src\assets\img\flags\Madagascar.png" />
+    <Content Include="src\assets\img\flags\Malawi.png" />
+    <Content Include="src\assets\img\flags\Malaysia.png" />
+    <Content Include="src\assets\img\flags\Maldives.png" />
+    <Content Include="src\assets\img\flags\Mali.png" />
+    <Content Include="src\assets\img\flags\Malta.png" />
+    <Content Include="src\assets\img\flags\Marshall Islands.png" />
+    <Content Include="src\assets\img\flags\Martinique.png" />
+    <Content Include="src\assets\img\flags\Mauritania.png" />
+    <Content Include="src\assets\img\flags\Mauritius.png" />
+    <Content Include="src\assets\img\flags\Mexico.png" />
+    <Content Include="src\assets\img\flags\Micronesia.png" />
+    <Content Include="src\assets\img\flags\Moldova.png" />
+    <Content Include="src\assets\img\flags\Monaco.png" />
+    <Content Include="src\assets\img\flags\Mongolia.png" />
+    <Content Include="src\assets\img\flags\Montenegro.png" />
+    <Content Include="src\assets\img\flags\Montserrat.png" />
+    <Content Include="src\assets\img\flags\Morocco.png" />
+    <Content Include="src\assets\img\flags\Mozambique.png" />
+    <Content Include="src\assets\img\flags\Myanmar(Burma).png" />
+    <Content Include="src\assets\img\flags\Namibia.png" />
+    <Content Include="src\assets\img\flags\NATO.png" />
+    <Content Include="src\assets\img\flags\Nauru.png" />
+    <Content Include="src\assets\img\flags\Nepal.png" />
+    <Content Include="src\assets\img\flags\Netherlands Antilles.png" />
+    <Content Include="src\assets\img\flags\Netherlands.png" />
+    <Content Include="src\assets\img\flags\New Caledonia.png" />
+    <Content Include="src\assets\img\flags\New Zealand.png" />
+    <Content Include="src\assets\img\flags\Nicaragua.png" />
+    <Content Include="src\assets\img\flags\Niger.png" />
+    <Content Include="src\assets\img\flags\Nigeria.png" />
+    <Content Include="src\assets\img\flags\North Korea.png" />
+    <Content Include="src\assets\img\flags\Northern Cyprus.png" />
+    <Content Include="src\assets\img\flags\Northern Ireland.png" />
+    <Content Include="src\assets\img\flags\Norway.png" />
+    <Content Include="src\assets\img\flags\Olimpic Movement.png" />
+    <Content Include="src\assets\img\flags\Oman.png" />
+    <Content Include="src\assets\img\flags\OPEC.png" />
+    <Content Include="src\assets\img\flags\Pakistan.png" />
+    <Content Include="src\assets\img\flags\Palau.png" />
+    <Content Include="src\assets\img\flags\Palestine.png" />
+    <Content Include="src\assets\img\flags\Panama.png" />
+    <Content Include="src\assets\img\flags\Papua New Guinea.png" />
+    <Content Include="src\assets\img\flags\Paraguay.png" />
+    <Content Include="src\assets\img\flags\Peru.png" />
+    <Content Include="src\assets\img\flags\Philippines.png" />
+    <Content Include="src\assets\img\flags\Poland.png" />
+    <Content Include="src\assets\img\flags\Portugal.png" />
+    <Content Include="src\assets\img\flags\Puerto Rico.png" />
+    <Content Include="src\assets\img\flags\Qatar.png" />
+    <Content Include="src\assets\img\flags\Red Cross.png" />
+    <Content Include="src\assets\img\flags\Reunion.png" />
+    <Content Include="src\assets\img\flags\Romania.png" />
+    <Content Include="src\assets\img\flags\Russia.png" />
+    <Content Include="src\assets\img\flags\Rwanda.png" />
+    <Content Include="src\assets\img\flags\Saint Lucia.png" />
+    <Content Include="src\assets\img\flags\Samoa.png" />
+    <Content Include="src\assets\img\flags\San Marino.png" />
+    <Content Include="src\assets\img\flags\Sao Tome &amp; Principe.png" />
+    <Content Include="src\assets\img\flags\Saudi Arabia.png" />
+    <Content Include="src\assets\img\flags\Scotland.png" />
+    <Content Include="src\assets\img\flags\Senegal.png" />
+    <Content Include="src\assets\img\flags\Serbia(Yugoslavia).png" />
+    <Content Include="src\assets\img\flags\Seychelles.png" />
+    <Content Include="src\assets\img\flags\Sierra Leone.png" />
+    <Content Include="src\assets\img\flags\Singapore.png" />
+    <Content Include="src\assets\img\flags\Slovakia.png" />
+    <Content Include="src\assets\img\flags\Slovenia.png" />
+    <Content Include="src\assets\img\flags\Solomon Islands.png" />
+    <Content Include="src\assets\img\flags\Somalia.png" />
+    <Content Include="src\assets\img\flags\Somaliland.png" />
+    <Content Include="src\assets\img\flags\South Africa.png" />
+    <Content Include="src\assets\img\flags\South Korea.png" />
+    <Content Include="src\assets\img\flags\Spain.png" />
+    <Content Include="src\assets\img\flags\Sri Lanka.png" />
+    <Content Include="src\assets\img\flags\St Kitts &amp; Nevis.png" />
+    <Content Include="src\assets\img\flags\St Vincent &amp; the Grenadines.png" />
+    <Content Include="src\assets\img\flags\Sudan.png" />
+    <Content Include="src\assets\img\flags\Suriname.png" />
+    <Content Include="src\assets\img\flags\Swaziland.png" />
+    <Content Include="src\assets\img\flags\Sweden.png" />
+    <Content Include="src\assets\img\flags\Switzerland.png" />
+    <Content Include="src\assets\img\flags\Syria.png" />
+    <Content Include="src\assets\img\flags\Tahiti(French Polinesia).png" />
+    <Content Include="src\assets\img\flags\Taiwan.png" />
+    <Content Include="src\assets\img\flags\Tajikistan.png" />
+    <Content Include="src\assets\img\flags\Tanzania.png" />
+    <Content Include="src\assets\img\flags\Thailand.png" />
+    <Content Include="src\assets\img\flags\Timor-Leste.png" />
+    <Content Include="src\assets\img\flags\Togo.png" />
+    <Content Include="src\assets\img\flags\Tonga.png" />
+    <Content Include="src\assets\img\flags\Trinidad &amp; Tobago.png" />
+    <Content Include="src\assets\img\flags\Tunisia.png" />
+    <Content Include="src\assets\img\flags\Turkey.png" />
+    <Content Include="src\assets\img\flags\Turkmenistan.png" />
+    <Content Include="src\assets\img\flags\Turks and Caicos Islands.png" />
+    <Content Include="src\assets\img\flags\Tuvalu.png" />
+    <Content Include="src\assets\img\flags\Uganda.png" />
+    <Content Include="src\assets\img\flags\Ukraine.png" />
+    <Content Include="src\assets\img\flags\United Arab Emirates.png" />
+    <Content Include="src\assets\img\flags\United Nations.png" />
+    <Content Include="src\assets\img\flags\United-Kingdom.png" />
+    <Content Include="src\assets\img\flags\Uruguay.png" />
+    <Content Include="src\assets\img\flags\USA.png" />
+    <Content Include="src\assets\img\flags\Uzbekistan.png" />
+    <Content Include="src\assets\img\flags\Vanutau.png" />
+    <Content Include="src\assets\img\flags\Vatican City.png" />
+    <Content Include="src\assets\img\flags\Venezuela.png" />
+    <Content Include="src\assets\img\flags\Viet Nam.png" />
+    <Content Include="src\assets\img\flags\Virgin Islands British.png" />
+    <Content Include="src\assets\img\flags\Virgin Islands US.png" />
+    <Content Include="src\assets\img\flags\Wales.png" />
+    <Content Include="src\assets\img\flags\Western Sahara.png" />
+    <Content Include="src\assets\img\flags\Yemen.png" />
+    <Content Include="src\assets\img\flags\Zambia.png" />
+    <Content Include="src\assets\img\flags\Zimbabwe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="e2e" />
+    <Folder Include="src" />
+    <Folder Include="src\app" />
+    <Folder Include="src\app\account" />
+    <Folder Include="src\app\account\change-password" />
+    <Folder Include="src\app\account\login" />
+    <Folder Include="src\app\core" />
+    <Folder Include="src\app\core\animations" />
+    <Folder Include="src\app\core\auth" />
+    <Folder Include="src\app\core\components" />
+    <Folder Include="src\app\core\data" />
+    <Folder Include="src\app\core\http" />
+    <Folder Include="src\app\core\models" />
+    <Folder Include="src\app\core\transfer-panel" />
+    <Folder Include="src\app\core\transfer-panel\transfe-panel" />
+    <Folder Include="src\app\dashboard" />
+    <Folder Include="src\app\layouts" />
+    <Folder Include="src\app\models" />
+    <Folder Include="src\app\models\models" />
+    <Folder Include="src\app\pages" />
+    <Folder Include="src\app\pages\not-found" />
+    <Folder Include="src\app\settings" />
+    <Folder Include="src\app\settings\roles" />
+    <Folder Include="src\app\settings\roles\role-edit" />
+    <Folder Include="src\app\settings\roles\role-list" />
+    <Folder Include="src\app\settings\users" />
+    <Folder Include="src\app\settings\users\user-edit" />
+    <Folder Include="src\app\settings\users\user-list" />
+    <Folder Include="src\app\shared" />
+    <Folder Include="src\app\shared\services" />
+    <Folder Include="src\app\shared\services\services" />
+    <Folder Include="src\assets" />
+    <Folder Include="src\assets\config" />
+    <Folder Include="src\assets\css" />
+    <Folder Include="src\assets\fonts" />
+    <Folder Include="src\assets\i18n" />
+    <Folder Include="src\assets\img" />
+    <Folder Include="src\assets\img\avatars" />
+    <Folder Include="src\assets\img\flags" />
+    <Folder Include="src\environments" />
+    <Folder Include="src\img" />
+    <Folder Include="src\scss" />
+    <Folder Include="src\scss\bootstrap" />
+    <Folder Include="src\scss\bootstrap\mixins" />
+    <Folder Include="src\scss\bootstrap\utilities" />
+    <Folder Include="src\scss\core" />
+    <Folder Include="src\scss\core\utilities" />
+    <Folder Include="src\scss\vendors" />
+    <Folder Include="src\scss\vendors\chart.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

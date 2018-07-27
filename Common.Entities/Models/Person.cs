@@ -1,8 +1,8 @@
-﻿using Common.Entities.Enums;
+﻿using Common360.Entities.Enums;
 using System;
 using System.Collections.Generic;
 
-namespace Common.Entities.Models
+namespace Common360.Entities.Models
 {
     public sealed class Person
     {

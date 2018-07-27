@@ -24,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Common.Entities\Common.Entities.csproj" />
-    <ProjectReference Include="..\Common.Core\Common.Core.csproj" />
-    <ProjectReference Include="..\Common.Data\Common.Data.csproj" />
+    <ProjectReference Include="..\Common.Core\Common360.Core.csproj" />
+    <ProjectReference Include="..\Common.Data\Common360.Data.csproj" />
+    <ProjectReference Include="..\Common.Entities\Common360.Entities.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
-﻿using Common.Entities.Interfaces;
+﻿using Common360.Entities.Interfaces;
 
-namespace Common.Entities.Models
+namespace Common360.Entities.Models
 {
     public class Address : IPoliticalDivision
     {

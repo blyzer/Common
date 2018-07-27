@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 
-namespace Common.Contracts
+namespace Common360.Contracts
 {
     public interface IRepositoryBase<T>
     {

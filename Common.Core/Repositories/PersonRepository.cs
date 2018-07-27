@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Common.Data;
-using Common.Entities.Models;
-using Common.Entities.Enums;
+using Common360.Data;
+using Common360.Entities.Models;
+using Common360.Entities.Enums;
 using System.Threading.Tasks;
 
-namespace Common.Core.Repositories
+namespace Common360.Core.Repositories
 {
     public class PersonRepository : RepositoryBase<Person>
     {

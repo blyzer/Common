@@ -1,3 +1,5 @@
+/*jslint es6 */
+/*jslint node: true */
 const sortJson = require('sort-json'),
   glob = require('glob');
 

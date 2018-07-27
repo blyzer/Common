@@ -2,6 +2,6 @@ export class UserProfile {
     userName: string;
     token: string;
     tokenExpirationDate: Date;
-    userType: number;
+    userType: string;
     accessList: string[];
 }

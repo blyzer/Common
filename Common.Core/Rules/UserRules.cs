@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Common.Core.Repositories;
-using Common.Entities.Models;
+using Common360.Core.Repositories;
+using Common360.Entities.Models;
 
-namespace Common.Core.Rules
+namespace Common360.Core.Rules
 {
     public sealed class UserRules : RulesBase<User>
     {

@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using Common.Core.Repositories;
-using Common.Entities.Models;
+using Common360.Core.Repositories;
+using Common360.Entities.Models;
 
-namespace Common.Core.Rules
+namespace Common360.Core.Rules
 {
     public class ProvinceRules : RulesBase<Province>
     {
@@ -42,7 +42,7 @@ namespace Common.Core.Rules
         public async Task<ISet<Province>> GetPredefinedProvincesAsync ()
         {
             var assembly = Assembly.GetExecutingAssembly();
-            var resourceStream = assembly.GetManifestResourceStream ("Common.Core.Resources.PoliticalDivision.json");
+            var resourceStream = assembly.GetManifestResourceStream ("Common360.Core.Resources.PoliticalDivision.json");
 
             using (var reader = new StreamReader (resourceStream, Encoding.UTF8))
             {

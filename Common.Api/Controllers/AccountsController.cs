@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Common.Api.Configurations;
-using Common.Api.Models;
-using Common.Entities.Models;
+using Common360.Api.Configurations;
+using Common360.Api.Models;
+using Common360.Entities.Models;
 
-namespace Common.Api.Controllers
+namespace Common360.Api.Controllers
 {
     [AllowAnonymous]
     [Route("api/accounts")]

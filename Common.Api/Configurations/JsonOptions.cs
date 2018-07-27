@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Common.Api.Configurations
+namespace Common360.Api.Configurations
 {
     public static class JsonOptions
     {

@@ -64,13 +64,13 @@
           </div>
         </div>
       </div>
-      <div class="form-group row" *ngIf="showSchoolCode">
-        <label class="col-md-2 col-lg-2 form-control-label" for="school">{{ 'School' | translate }}</label>
+      <div class="form-group row" *ngIf="showUserType">
+        <label class="col-md-2 col-lg-2 form-control-label" for="userType">{{ 'userType' | translate }}</label>
         <div class="col-md-6">
-          <select class="form-control" formControlName="schoolCode">
+          <select class="form-control" formControlName="userType">
             <option disabled selected value="" class="text-muted">{{'Select' | translate}}</option>
             <option value="*" class="text-muted">* {{'All(F)' | translate}}</option>
-            <option *ngFor="let school of schools" value="{{school.code}}">{{school.name | translate}}</option>
+            <option *ngFor="let userType of userTypesList" value="{{usertype}}">{{usertype | translate}}</option>
           </select>
           <div class="invalid-feedback">
             <span class="help-block">{{ 'Required' | translate }} </span>

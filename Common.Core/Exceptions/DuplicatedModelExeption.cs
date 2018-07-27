@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Common.Core.Exceptions
+namespace Common360.Core.Exceptions
 {
     public class DuplicatedModelExeption : Exception
     {

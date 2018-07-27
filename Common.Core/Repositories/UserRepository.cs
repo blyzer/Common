@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Common.Data;
-using Common.Entities.Models;
-using Common.Entities.Enums;
+using Common360.Data;
+using Common360.Entities.Models;
+using Common360.Entities.Enums;
 
-namespace Common.Core.Repositories
+namespace Common360.Core.Repositories
 {
     public class UserRepository : RepositoryBase<User>
     {

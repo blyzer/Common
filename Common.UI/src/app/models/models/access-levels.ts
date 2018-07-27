@@ -1,6 +1,4 @@
-﻿
-
-export enum AccessLevels {
+﻿export enum AccessLevels {
     administrator,
-    operator,
+    operator
 }

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Common.Entities.Models;
-using Common.Entities.Interfaces;
-using Common.Contracts;
+using Common360.Entities.Models;
+using Common360.Entities.Interfaces;
+using Common360.Contracts;
 using Microsoft.EntityFrameworkCore;
 
-namespace Common.Core.Repositories
+namespace Common360.Core.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {

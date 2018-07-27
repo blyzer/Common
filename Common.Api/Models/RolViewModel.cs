@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Common.Api.Models
+namespace Common360.Api.Models
 {
     public class RolViewModel
     {

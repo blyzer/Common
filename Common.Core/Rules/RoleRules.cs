@@ -3,9 +3,9 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using Common.Entities.Models;
+using Common360.Entities.Models;
 
-namespace Common.Core.Rules
+namespace Common360.Core.Rules
 {
     public class RoleRules
     {

@@ -1,10 +1,10 @@
-﻿using Common.Api.Configurations;
-using Common.Core.Repositories;
-using Common.Core.Rules;
-using Common.Data;
-using Common.Data.Seeders;
-using Common.Entities.Enums;
-using Common.Entities.Models;
+﻿using Common360.Api.Configurations;
+using Common360.Core.Repositories;
+using Common360.Core.Rules;
+using Common360.Data;
+using Common360.Data.Seeders;
+using Common360.Entities.Enums;
+using Common360.Entities.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -26,7 +26,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Api
+namespace Common360.Api
 {
     public class Startup
     {

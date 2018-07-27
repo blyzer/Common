@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Common.Entities.Models
+namespace Common360.Entities.Models
 {
     public class Municipality
     {

@@ -8,8 +8,6 @@ import { UserListComponent } from './users/user-list/user-list.component';
 import { UserEditComponent } from './users/user-edit/user-edit.component';
 import { DataTableModule, SharedModule, CheckboxModule } from 'primeng/primeng';
 import { TabsModule, CollapseModule, ModalModule, BsModalService } from 'ngx-bootstrap';
-import { SchoolListComponent } from './schools/school-list/school-list.component';
-import { SchoolEditComponent } from './schools/school-edit/school-edit.component';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import {TableModule} from 'primeng/table';
@@ -37,8 +35,6 @@ import { RoleEditComponent } from './roles/role-edit/role-edit.component';
     declarations: [
         UserListComponent,
         UserEditComponent,
-        SchoolListComponent,
-        SchoolEditComponent,
         RoleListComponent,
         RoleEditComponent
     ],

@@ -1,9 +1,9 @@
-﻿using Common.Data;
-using Common.Entities.Models;
+﻿using Common360.Data;
+using Common360.Entities.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Common.Core.Repositories
+namespace Common360.Core.Repositories
 {
     public class ContactInformationRepository : RepositoryBase<ContactInformation>
     {

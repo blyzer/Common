@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Common.Api.Configurations
+namespace Common360.Api.Configurations
 {
     public class JwtTokenCache
     {

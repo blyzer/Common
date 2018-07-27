@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Common.Api.Configurations
+namespace Common360.Api.Configurations
 {
     public class JwtOptions
     {

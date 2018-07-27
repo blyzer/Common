@@ -1,9 +1,9 @@
-using Common.Entities.Enums;
+using Common360.Entities.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Linq;
 
-namespace Common.Api.Filters
+namespace Common360.Api.Filters
 {
     public class ClaimRequirementAttribute : TypeFilterAttribute
     {

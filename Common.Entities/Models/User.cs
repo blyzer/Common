@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Common.Entities.Enums;
+using Common360.Entities.Enums;
 
-namespace Common.Entities.Models
+namespace Common360.Entities.Models
 {
     public class User : IdentityUser<int>
     {

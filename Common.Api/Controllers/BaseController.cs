@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Common.Api.Controllers
+namespace Common360.Api.Controllers
 {
     public class BaseController : Controller
     {

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Contracts\Common360.Contracts.csproj" />
+    <ProjectReference Include="..\Common.Data\Common360.Data.csproj" />
+    <ProjectReference Include="..\Common.Entities\Common360.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -8,14 +8,14 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Common.Api.Configurations;
-using Common.Api.Filters;
-using Common.Api.Models;
-using Common.Core.Rules;
-using Common.Entities.Models;
-using Common.Entities.Enums;
+using Common360.Api.Configurations;
+using Common360.Api.Filters;
+using Common360.Api.Models;
+using Common360.Core.Rules;
+using Common360.Entities.Models;
+using Common360.Entities.Enums;
 
-namespace Common.Api.Controllers
+namespace Common360.Api.Controllers
 {
 
     [Route("api/users")]

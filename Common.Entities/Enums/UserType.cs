@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Common.Entities.Enums
+namespace Common360.Entities.Enums
 {
     public enum UserType
     {

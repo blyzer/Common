@@ -1,9 +1,9 @@
-﻿using Common.Core.Repositories;
-using Common.Entities.Models;
-using Common.Entities.Enums;
+﻿using Common360.Core.Repositories;
+using Common360.Entities.Models;
+using Common360.Entities.Enums;
 using System.Threading.Tasks;
 
-namespace Common.Core.Rules
+namespace Common360.Core.Rules
 {
     public class PersonRules : RulesBase<Person>
     {

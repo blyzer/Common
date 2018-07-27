@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System;
 
-namespace Common.Data
+namespace Common360.Data
 {
     public class DbContextFactory : IDesignTimeDbContextFactory<DataContext>
     {

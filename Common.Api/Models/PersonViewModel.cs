@@ -1,9 +1,9 @@
-﻿using Common.Entities.Enums;
+﻿using Common360.Entities.Enums;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 
-namespace Common.Api.Models
+namespace Common360.Api.Models
 {
     public abstract class PersonViewModel
     {

@@ -1,6 +1,6 @@
-﻿using Common.Entities.Models;
+﻿using Common360.Entities.Models;
 
-namespace Common.Entities.Interfaces
+namespace Common360.Entities.Interfaces
 {
     public interface IRepositoryWrapper
     {

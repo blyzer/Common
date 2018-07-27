@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Common.Entities.Models;
+using Common360.Entities.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Common.Data
+namespace Common360.Data
 {
     public class DataContext : IdentityDbContext<User, Role, int>
     {
@@ -23,16 +23,16 @@ namespace Common.Data
         public DbSet<Address> Address { get; set; }
         public DbSet<ContactInformation> ContactInformations { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(builder);
 
-            ApplyConfigurationFromAsembly(modelBuilder);
+            ApplyConfigurationFromAsembly(builder);
 
-            ConfigureIdentity(modelBuilder);
+            ConfigureIdentity(builder);
         }
 
-        private void ApplyConfigurationFromAsembly(ModelBuilder modelBuilder)
+        private void ApplyConfigurationFromAsembly(ModelBuilder builder)
         {
             var applyGenericMethod = typeof(ModelBuilder).GetMethod("ApplyConfiguration", BindingFlags.Instance | BindingFlags.Public);
             // replace GetExecutingAssembly with assembly where your configurations are if necessary
@@ -48,7 +48,7 @@ namespace Common.Data
                         // make concrete ApplyConfiguration<SomeEntity> method
                         var applyConcreteMethod = applyGenericMethod.MakeGenericMethod(iface.GenericTypeArguments[0]);
                         // and invoke that with fresh instance of your configuration type
-                        applyConcreteMethod.Invoke(modelBuilder, new object[] { Activator.CreateInstance(type) });
+                        applyConcreteMethod.Invoke(builder, new object[] { Activator.CreateInstance(type) });
                         break;
                     }
                 }

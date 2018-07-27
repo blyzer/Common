@@ -8,7 +8,7 @@
     Template(Settings settings)
     {
         settings
-           .IncludeProject("Common.Entities")
+           .IncludeProject("Common360.Entities")
            .OutputFilenameFactory = (file) => {
                 string[] fileParts = file.FullName.Split('\\');
                 Boolean startNamespaceAppending = false;
@@ -35,9 +35,9 @@
                 }
                 string fileName = prefixFolder + SpacesFromCamel(typeName) + ".ts";
                 // Creates target directory if it does not exist
-                Regex rgx = new Regex("^(.*)(Common.Entities\\.[\\w\\.]+\\\\Models)(.*)$");
+                Regex rgx = new Regex("^(.*)(Common360.Entities\\.[\\w\\.]+\\\\Models)(.*)$");
                 string pathFileName = Path.GetDirectoryName(file.FullName);
-                pathFileName = rgx.Replace(pathFileName, "$1\\Common.Entities\\src\\app\\models\\" + prefixFolder);
+                pathFileName = rgx.Replace(pathFileName, "$1\\Common360.Entities\\src\\app\\models\\" + prefixFolder);
                 if (!Directory.Exists(pathFileName)) {
                     DirectoryInfo directoryInfo = Directory.CreateDirectory(pathFileName);
                 }
@@ -65,7 +65,7 @@
         return value;
     }
 }
-$Enums(Common.Entities.Enums*)[
+$Enums(Common360.Entities.Enums*)[
 export enum $Name {$Values[
     $name,]
 }]

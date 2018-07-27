@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Common.Core.Repositories;
-using Common.Contracts;
+using Common360.Core.Repositories;
+using Common360.Contracts;
 
-namespace Common.Core.Rules
+namespace Common360.Core.Rules
 {
     public abstract class RulesBase<T> : IRulesBase<T> where T : class
     {

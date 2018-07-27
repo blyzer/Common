@@ -12,3 +12,4 @@ export * from './models/address';
 export * from './models/gender';
 export * from './models/contact-type';
 export * from './models/access-list';
+export * from './models/user-type';

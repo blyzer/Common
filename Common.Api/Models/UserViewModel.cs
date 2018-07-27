@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Common.Api.Models
+namespace Common360.Api.Models
 {
     public class UserViewModel : PersonViewModel
     {
